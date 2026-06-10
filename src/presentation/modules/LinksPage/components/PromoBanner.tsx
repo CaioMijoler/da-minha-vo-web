@@ -28,7 +28,7 @@ export function PromoBanner() {
                 className="text-[#fbbd08] text-[9px] font-bold tracking-[0.2em] uppercase"
               >
                 ✦ Quarta-feira de Desconto · Na compra de 2 massas, leve o molho
-                com 5% OFF &nbsp;&nbsp;
+                com 10% OFF &nbsp;&nbsp;
               </span>
             ))}
           </motion.div>
