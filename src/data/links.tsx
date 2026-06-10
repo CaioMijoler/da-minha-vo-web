@@ -7,8 +7,9 @@ import imgGnocchi from "../assets/images/GNOCCHI.png";
 import imgMolhos from "../assets/images/MOLHOS.png";
 import imgRavioli from "../assets/images/RAVIOLI.png";
 import imgRondelli from "../assets/images/RONDELLI.png";
-import imgSofiatelli from "../assets/images/SOFIATELLI (1).png";
+import imgSofiatelli from "../assets/images/SOFIATELLI.png";
 import imgTortellini from "../assets/images/TORTELLINI.png";
+import imgLasagna from "../assets/images/LASAGNA.png";
 import type { GalleryImage } from "../domain/types";
 
 export const GALLERY_IMAGES: GalleryImage[] = [
@@ -17,12 +18,13 @@ export const GALLERY_IMAGES: GalleryImage[] = [
   { src: imgCappelletti, label: "Cappelletti", visible: true },
   { src: imgConchiglioni, label: "Conchiglioni", visible: true },
   { src: imgGnocchiR, label: "Gnocchi Recheado", visible: true },
-  { src: imgGnocchi, label: "Gnocchi", visible: false },
+  { src: imgGnocchi, label: "Gnocchi", visible: true },
   { src: imgMolhos, label: "Molhos", visible: true },
   { src: imgRavioli, label: "Ravioli", visible: true },
   { src: imgRondelli, label: "Rondelli", visible: true },
   { src: imgSofiatelli, label: "Sofiatelli", visible: true },
   { src: imgTortellini, label: "Tortellini", visible: false },
+  { src: imgLasagna, label: "Lasagna", visible: true },
 ];
 
 export const LINKS = [
