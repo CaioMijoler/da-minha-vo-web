@@ -51,13 +51,13 @@ export function PromoBanner() {
                 PROMOÇÃO ESPECIAL
               </p>
               <p className="text-[#fbbd08] text-[11px] font-medium leading-tight truncate">
-                Na compra de 2 massas, leve o molho com 5% DE DESCONTO!
+                Na compra de 2 massas, leve o molho com 10% DE DESCONTO!
               </p>
             </div>
           </div>
           <div className="flex items-center gap-2 flex-shrink-0">
             <a
-              href="https://wa.me/5516993048907?text=Olá!%20Quero%20aproveitar%20a%20promoção%3A%202%20massas%20%2B%201%20molho%20com%205%25%20OFF!%20"
+              href="https://wa.me/5516993048907?text=Olá!%20Quero%20aproveitar%20a%20promoção%3A%202%20massas%20%2B%201%20molho%20com%2010%25%20OFF!"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#fbbd08] hover:bg-[#ffc924] text-[#3d1a04] text-[11px] font-bold px-3 py-1.5 rounded-md whitespace-nowrap transition-colors shadow-md"
