@@ -31,7 +31,7 @@ export function LinksPage() {
   const [cardapioOpen, setCardapioOpen] = useState(false);
   const [copaPromoOpen, setCopaPromoOpen] = useState(false);
   const [copaCarouselOpen, setCopaCarouselOpen] = useState(false);
-  const SHOW_COPA = import.meta.env.VITE_SHOW_COPA === true;
+  const SHOW_COPA = import.meta.env.VITE_SHOW_COPA === "true";
 
   useEffect(() => {
     if (!SHOW_COPA) return;
