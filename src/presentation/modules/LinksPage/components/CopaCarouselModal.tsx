@@ -58,7 +58,7 @@ export function CopaCarouselModal({ isOpen, onClose }: ModalProps) {
       >
         <div
           onClick={(e) => e.stopPropagation()}
-          className="relative max-w-sm w-full flex flex-col items-center"
+          className="relative w-full max-w-sm flex flex-col items-center max-h-[90dvh"
         >
           <div className="w-full flex justify-between items-center mb-4 px-2">
             <div>
@@ -88,7 +88,7 @@ export function CopaCarouselModal({ isOpen, onClose }: ModalProps) {
             </button>
           </div>
 
-          <div className="relative w-full bg-[#faf6ea] rounded-3xl overflow-hidden shadow-2xl border border-[#e8d9bb]/40">
+          <div className="relative w-full flex-1 bg-[#faf6ea] rounded-3xl overflow-hidden shadow-2xl border border-[#e8d9bb]/40">
             <AnimatePresence mode="popLayout" custom={direction}>
               <motion.img
                 key={index}
@@ -99,7 +99,7 @@ export function CopaCarouselModal({ isOpen, onClose }: ModalProps) {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: -direction * 150, opacity: 0 }}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                className="w-full h-full object-cover"
+                className="w-full max-h-[65vh] object-contain"
               />
             </AnimatePresence>
           </div>
