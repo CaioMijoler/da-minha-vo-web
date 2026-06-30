@@ -10,21 +10,147 @@ import imgRondelli from "../assets/images/RONDELLI.png";
 import imgSofiatelli from "../assets/images/SOFIATELLI.png";
 import imgTortellini from "../assets/images/TORTELLINI.png";
 import imgLasagna from "../assets/images/LASAGNA.png";
+
+// Premium imports
+import imgBomboloni from "../assets/images/premium/BOMBOLONI.png";
+import imgCappellettoni from "../assets/images/premium/CAPPELLETTONI.png";
+import imgFagottini from "../assets/images/premium/FAGOTTINI.png";
+import imgFiori from "../assets/images/premium/FIORI.png";
+import imgMezzelune from "../assets/images/premium/MEZZELUNE.png";
+import imgPansoti from "../assets/images/premium/PANSOTI.png";
+import imgRavioloni from "../assets/images/premium/RAVIOLONI.png";
+import imgSacottini from "../assets/images/premium/SACOTTINI.png";
+import imgSorrentino from "../assets/images/premium/SORRENTINO.png";
+import imgTortelloni from "../assets/images/premium/TORTELLONI.png";
+
 import type { GalleryImage } from "../domain/types";
+import { LinkType } from "@/domain/enum/LinkType";
 
 export const GALLERY_IMAGES: GalleryImage[] = [
-  { src: imgAgnolotti, label: "Agnolotti", visible: false },
-  { src: imgCannelloni, label: "Cannelloni", visible: true },
-  { src: imgCappelletti, label: "Cappelletti", visible: true },
-  { src: imgConchiglioni, label: "Conchiglioni", visible: true },
-  { src: imgGnocchiR, label: "Gnocchi Recheado", visible: true },
-  { src: imgGnocchi, label: "Gnocchi", visible: true },
-  { src: imgMolhos, label: "Molhos", visible: true },
-  { src: imgRavioli, label: "Ravioli", visible: true },
-  { src: imgRondelli, label: "Rondelli", visible: true },
-  { src: imgSofiatelli, label: "Sofiatelli", visible: true },
-  { src: imgTortellini, label: "Tortellini", visible: false },
-  { src: imgLasagna, label: "Lasagna", visible: true },
+  {
+    src: imgAgnolotti,
+    label: "Agnolotti",
+    visible: true,
+    type: LinkType.Tradicional,
+  },
+  {
+    src: imgCannelloni,
+    label: "Cannelloni",
+    visible: true,
+    type: LinkType.Tradicional,
+  },
+  {
+    src: imgCappelletti,
+    label: "Cappelletti",
+    visible: true,
+    type: LinkType.Tradicional,
+  },
+  {
+    src: imgConchiglioni,
+    label: "Conchiglioni",
+    visible: true,
+    type: LinkType.Tradicional,
+  },
+  {
+    src: imgGnocchiR,
+    label: "Gnocchi Recheado",
+    visible: true,
+    type: LinkType.Tradicional,
+  },
+  {
+    src: imgGnocchi,
+    label: "Gnocchi",
+    visible: true,
+    type: LinkType.Tradicional,
+  },
+  {
+    src: imgMolhos,
+    label: "Molhos",
+    visible: true,
+    type: LinkType.Tradicional,
+  },
+  {
+    src: imgRavioli,
+    label: "Ravioli",
+    visible: true,
+    type: LinkType.Tradicional,
+  },
+  {
+    src: imgRondelli,
+    label: "Rondelli",
+    visible: true,
+    type: LinkType.Tradicional,
+  },
+  {
+    src: imgSofiatelli,
+    label: "Sofiatelli",
+    visible: true,
+    type: LinkType.Tradicional,
+  },
+  {
+    src: imgTortellini,
+    label: "Tortellini",
+    visible: false,
+    type: LinkType.Tradicional,
+  },
+  {
+    src: imgLasagna,
+    label: "Lasagna",
+    visible: true,
+    type: LinkType.Arte_Al_Forno,
+  },
+
+  // Premium options
+  {
+    src: imgBomboloni,
+    label: "Bomboloni",
+    visible: true,
+    type: LinkType.Premium,
+  },
+  {
+    src: imgCappellettoni,
+    label: "Cappellettoni",
+    visible: true,
+    type: LinkType.Premium,
+  },
+  {
+    src: imgFagottini,
+    label: "Fagottini",
+    visible: true,
+    type: LinkType.Premium,
+  },
+  { src: imgFiori, label: "Fiori", visible: true, type: LinkType.Premium },
+  {
+    src: imgMezzelune,
+    label: "Mezzelune",
+    visible: false,
+    type: LinkType.Premium,
+  },
+  { src: imgPansoti, label: "Pansoti", visible: true, type: LinkType.Premium },
+  {
+    src: imgRavioloni,
+    label: "Ravioloni",
+    visible: true,
+    type: LinkType.Premium,
+  },
+  {
+    src: imgSacottini,
+    label: "Sacottini",
+    visible: false,
+    type: LinkType.Premium,
+  },
+  {
+    src: imgSorrentino,
+    label: "Sorrentino",
+    visible: true,
+    type: LinkType.Premium,
+  },
+  {
+    src: imgTortelloni,
+    label: "Tortelloni",
+    visible: true,
+    type: LinkType.Premium,
+  },
 ];
 
 export const LINKS = [

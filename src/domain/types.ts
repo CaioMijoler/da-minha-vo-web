@@ -11,4 +11,5 @@ export interface GalleryImage {
   src: string;
   label: string;
   visible: boolean;
+  type: string;
 }

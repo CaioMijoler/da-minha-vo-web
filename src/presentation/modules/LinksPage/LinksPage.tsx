@@ -4,12 +4,14 @@ import { BrandLogo } from "../../../shared/components/BrandLogo";
 import { PromoBanner } from "./components/PromoBanner";
 import { Gallery } from "./components/Gallery";
 import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
-import { Lightbox } from "./components/Lightbox";
+import { CardapioModal } from "./components/CardapioModal";
 import { CopaPromoModal } from "./components/CopaPromoModal";
 import { CopaCarouselModal } from "./components/CopaCarouselModal";
 import { LINKS } from "../../../data/links";
-import imgCardapio from "../../../assets/images/cardapio/cardapio-tradicional.jpeg";
-
+import imgCardapioTrad from "../../../assets/images/cardapio/cardapio_tradicional.png";
+import imgCardapioPremium from "../../../assets/images/cardapio/cardapio_premium.png";
+import imgCardapioArte from "../../../assets/images/cardapio/arte_al_forno.jpeg";
+import { LinkColor, LinkType } from "@/domain/enum/LinkType";
 const CARDAPIO_ICON = (
   <svg
     width="18"
@@ -28,7 +30,7 @@ const CARDAPIO_ICON = (
 );
 
 export function LinksPage() {
-  const [cardapioOpen, setCardapioOpen] = useState(false);
+  const [cardapioModalOpen, setCardapioModalOpen] = useState(false);
   const [copaPromoOpen, setCopaPromoOpen] = useState(false);
   const [copaCarouselOpen, setCopaCarouselOpen] = useState(false);
   const SHOW_COPA = import.meta.env.VITE_SHOW_COPA === "true";
@@ -97,7 +99,7 @@ export function LinksPage() {
         >
           {/* Cardápio */}
           <motion.button
-            onClick={() => setCardapioOpen(true)}
+            onClick={() => setCardapioModalOpen(true)}
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
@@ -183,13 +185,19 @@ export function LinksPage() {
           ))}
         </motion.div>
 
-        {cardapioOpen && (
-          <Lightbox
-            src={imgCardapio}
-            alt="Cardápio Da Minha Vó"
-            onClose={() => setCardapioOpen(false)}
-          />
-        )}
+        <CardapioModal
+          isOpen={cardapioModalOpen}
+          onClose={() => setCardapioModalOpen(false)}
+          options={[
+            { label: LinkType.Tradicional, src: imgCardapioTrad },
+            {
+              label: LinkType.Premium,
+              src: imgCardapioPremium,
+              activeColor: LinkColor[LinkType.Premium],
+            },
+            { label: LinkType.Arte_Al_Forno, src: imgCardapioArte },
+          ]}
+        />
 
         <CopaPromoModal
           isOpen={copaPromoOpen}
